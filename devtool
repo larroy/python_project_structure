@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+install_deps_dev() {
+    pip install -e .[test]
+}
+
 env_setup() {
     true
 }
